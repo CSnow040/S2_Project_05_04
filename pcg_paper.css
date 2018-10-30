@@ -15,10 +15,13 @@
 */
 
 html {
-    background: rgb(236, 204, 135);
+    background: rgb(247, 221, 182);
 }
 
+/* The body selector centers the page and provides parameters 
+of the widths and giving the website a color */
 body {
+    background-color: rgb(223, 189, 117);
     margin-left: auto;
     margin-right: auto;
     max-width: 960px;
@@ -26,17 +29,22 @@ body {
     width: 95%;
 }
 
+/* This style gives the main image of the website the 
+properties to spread coorectly to the header */
 header img {
     display: block;
     width: 100%;
 }
 
+/* This box-sizing selector is used to prevent container collapse */
 box-sizing {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 
+/* These nav selectors accompanied by their corresponding id's and classes
+ are made to design the navigational bars to fit their intended needs  */
 nav {
     list-style-type: none;
 }
@@ -47,6 +55,8 @@ nav#mainNav ul {
     background-color: rgb(206, 165, 88);
     padding: 10px 10px;
     line-height: 30px;
+    margin: 20px;
+    padding: 20px;
 }
 
 nav#links {
@@ -55,17 +65,37 @@ nav#links {
     background-color: rgb(206, 165, 88);
     padding: 10px 15px;
     line-height: 30px;
+    margin: 20px;
 }
 
-nav a:link,
-nav a:visited {
+nav.horizontal {
+    display: table;
+    width: 100%;
+}
+
+nav.horizontal ul {
+    display: table-row;
+}
+
+nav.horizontal ul li {
+    list-style-type: none;
+    display: table-cell;
+    padding: 20px;
+    background-color: rgb(131, 105, 72);
+}
+
+/* All of the links, visited, hover, and active selector attributes are designed to each navigation 
+selector with whatever id or class it contains to have multiple different designs to each 
+navigational bar itself */
+body>header>nav a:link,
+body>header>nav a:visited {
     text-decoration-style: none;
 }
 
 body>header>nav a:link,
 body>header>nav a:visited {
     font-size: 0.9em;
-    color: rgb(51, 51, 51);
+    color: rgb(61, 61, 61);
     text-decoration: none;
 }
 
@@ -74,10 +104,71 @@ body>header>nav a:active {
     color: rgb(255, 211, 211);
 }
 
+nav#links a:link,
+nav#links a:visited {
+    text-decoration-style: none;
+}
+
+nav#links a:link,
+nav#links a:visited {
+    font-size: 0.9em;
+    color: rgb(29, 29, 29);
+    text-decoration: none;
+}
+
+nav#links a:hover,
+nav#links a:active {
+    color: rgb(255, 211, 211);
+}
+
+nav.horizontal a:link,
+nav.horizontal a:visited {
+    text-decoration-style: none;
+}
+
+nav.horizontal a:link,
+nav.horizontal a:visited {
+    font-size: 0.9em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav.horizontal a:hover,
+nav.horizontal a:active {
+    color: rgb(255, 211, 211);
+}
+
+/* This h2 selector is used to align the titles of the stories to 
+the middle and top of the story paragraph */
 h2 {
     text-align: center;
 }
 
+/* These article selectors add styles to each story id for 
+individual designs to each paragraph needed */
+article#story1 {
+    margin: 20px;
+    padding: 20px;
+}
+
+article#story2 {
+    margin: 20px;
+    padding: 20px;
+}
+
+article#story3 {
+    margin: 20px;
+    padding: 20px;
+}
+
+article#story4 {
+    margin: 20px;
+    padding: 20px;
+}
+
+/* The footer styles make the perfect designs for the footer for this webpage 
+specifically by centering it and adding color to the background of it at the 
+bottom of the page */
 footer {
     background-color: rgb(172, 127, 45);
     text-align: center;
